@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+body{
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 20px;
+    font-family:'Libre Franklin';
+    font-weight: 300;
+}
+h1{
+    font-weight: 300;
+}
+.copyright{
+    font-size: 0.8rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 3px;
+}
+
+span{
+    color: hsl(209, 33%, 12%);
+    font-weight: 600;
+}
+
+a{
+    color: hsl(223, 87%, 63%);
+    margin: 25px 10px;
+}
+
+.par{
+    color: hsl(0, 1%, 28%);
+    margin: 10px 0px 20px 0px;
+    font-weight: 300;
+}
+
+.logo{
+    margin: 20px 0px;
+    width: max-content;
+}
+
+#form{
+    display: block;
+}
+
+.email{
+    border: hsl(223, 100%, 88%) 1px solid;
+    width: 80%;
+    height: 40px;
+    padding-left:20px;
+    border-radius: 30px;
+}
+
+.email::placeholder{
+    color: hsl(223, 100%, 88%);
+}
+
+.warning{
+    border: hsl(354, 100%, 66%) 1px solid;
+    width: 80%;
+    height: 40px;
+    padding-left:20px;
+    border-radius: 30px;
+}
+
+#btn{
+    width: 80%;
+    height: 40px;
+    background-color: hsl(223, 87%, 63%);
+    margin: 10px 0px 35px 0px;
+    border: transparent;
+    box-shadow: hsl(223, 100%, 88%) 0px 3px 8px;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.illustrator{
+    width: 90%;
+    height: 90%;
+}
+
+.error{
+    color: red;
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+@media screen and (min-width: 500px) {
+    .email, .warning{
+        width: 15rem;
+        margin-top: 5px;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #btn{
+        width: 150px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+    #form{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .email, .warning{
+        width: 20rem;
+        margin-top: 5px;
+    }
+
+    #btn{
+        width: 150px;
+        height: 40px;
+    }
+}
